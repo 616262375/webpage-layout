@@ -1,0 +1,178 @@
+/*通用标记*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    min-width: 1000px;
+    max-width: 1400px;
+}
+
+/*layout*/
+
+section {
+    float: left;
+    width: 50%;
+}
+
+aside {
+    float: left;
+    width: 30%;
+}
+
+nav {
+    float: left;
+    width: 20%;
+}
+
+footer {
+    clear: both;
+}
+
+header, section, aside, nav, footer {
+    padding: 20px;
+}
+
+header, footer {
+    border-top: 5px solid #a66;
+    border-bottom: 5px solid #a66;
+}
+
+
+/*字体设置*/
+
+@font-face {
+    font-family: 'latoregular';
+    src: url('fonts/lato-regular-webfont.eot');
+    src: url('fonts/lato-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/lato-regular-webfont.woff2') format('woff2'),
+    url('fonts/lato-regular-webfont.woff') format('woff'),
+    url('fonts/lato-regular-webfont.ttf') format('truetype'),
+    url('fonts/lato-regular-webfont.svg#latoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'josefin_sansbold';
+    src: url('fonts/josefinsans-bold-webfont.eot');
+    src: url('fonts/josefinsans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/josefinsans-bold-webfont.woff2') format('woff2'),
+    url('fonts/josefinsans-bold-webfont.woff') format('woff'),
+    url('fonts/josefinsans-bold-webfont.ttf') format('truetype'),
+    url('fonts/josefinsans-bold-webfont.svg#josefin_sansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*整体设置*/
+
+html {
+    font-family: 'latoregular', serif;
+    font-size: 10px;
+}
+
+h1, h2 {
+    font-family: 'josefin_sansbold', sans-serif;
+    word-spacing: 0.3rem;
+}
+
+h1 {
+    font-size: 5rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 3.2rem;
+}
+
+section h2 + p {
+    text-indent: 20px;
+}
+
+p, li {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    word-spacing: 0.3rem;
+    letter-spacing: 0.1rem;
+}
+
+/*链接样式设置*/
+
+a {
+    outline: none;
+}
+
+a[href*="http"] {
+    padding-right: 19px;
+    background: url("icon.png") no-repeat 100% 0;
+    background-size: 16px 16px;
+}
+
+a:link, a:visited {
+    color: #a66;
+}
+
+a:focus, a:hover{
+    text-decoration: none;
+}
+
+a:active {
+    color: transparent;
+    text-shadow: 0 0 1px #f00,
+                    0 0 2px #f00,
+                    0 0 3px black,
+                    0 0 4px black;
+}
+
+
+/*ol, ul的样式设置*/
+
+ul, ol {
+    margin: 1.6rem;
+}
+
+ul {
+    list-style-type: square;
+}
+
+ol {
+    list-style-type: lower-latin;
+}
+
+/*nav导航栏的样式*/
+
+nav ul {
+    padding: 0;
+    margin-top: 0.8rem;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    border: 1px solid #a66;
+    line-height: 3;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+nav ul li a:focus, nav ul li a:hover {
+    background-color: #aa6666;
+    color: white;
+}
+
+nav ul li a:active {
+    color: white;
+    background-color: black;
+}
+
+
